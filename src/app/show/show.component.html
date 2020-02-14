@@ -1,0 +1,20 @@
+<input type="text" name="search" placeholder="search" [(ngModel)]="searchText" (input)="search()" >
+<br><br>
+
+<table class="table">
+<tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Update Operation</th>
+    <th>Delete Operation</th>
+</tr>
+<tr *ngFor="let todo of todoArray">
+    <td> {{ todo.name }}</td>
+    <td> {{ todo.address }} </td>
+    <td><button class="btn btn-danger" (click)="updateTodo(todo)"> Update </button></td>
+    <td><button class="btn btn-danger" (click)="deleteTodo(todo._id)">Delete</button></td>
+</tr>
+</table>
+
+<button class="btn btn-danger ml-5" (click)="prevtodos()"> Prev </button>
+<button class="btn btn-danger ml-5" (click)="nexttodos()">Next</button>

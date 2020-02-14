@@ -1,0 +1,15 @@
+.show
+{
+    height:40px ; 
+    width: 90px; 
+    margin-left: 5%; 
+    background-color: aqua;
+}
+
+.add
+{
+    height:40px ; 
+    width: 90px; 
+    margin-left: 10%; 
+    background-color: aqua;
+}
